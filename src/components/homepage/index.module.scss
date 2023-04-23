@@ -1,0 +1,22 @@
+.homepage {
+
+    //border: solid red 2px;
+    @media (max-width: 450px) {
+        
+        //border: solid rgb(122, 128, 0) 2px;
+    
+    }
+
+
+
+
+}
+
+.cardsContainer {
+
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
