@@ -5,25 +5,47 @@
     border-radius: 10px;
     overflow: hidden;
     flex-direction: column;
-    
+
+    @media (min-width: 1024px){
+
+        margin: 0 30px;
+    }
+
     
 }
 
 
 .titleAndLocationAndTagsAndStars {
 
-    //border: solid red 2px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px){
+
+      
+        margin: 10px 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
 
 
 .titleAndLocation {
 
-    //border: solid green 2px;
     color: #FF6060;
     font-weight: bold;
     & > p:first-child {
        font-size: 18px; 
     }
+
+    @media (min-width: 1024px){
+
+        width: 50%;
+    }
+
+
 
 }
 
@@ -31,7 +53,10 @@
 
 .tagsAndStars {
 
-    //border: solid blue 2px;
+
+    display: flex;
+    flex-direction: column;
+
  
 }
 
@@ -41,6 +66,9 @@
     margin: 10px 0;
     justify-content: flex-start;
     align-items: center;
+
+  
+    width: 100%;
 
 
 }
@@ -53,6 +81,17 @@
     width: 100%;
     justify-content: flex-start;
 
+    @media (min-width: 1024px){
+
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+   
+    
+    
+    }
+
 
 }
 .hostContainer {
@@ -62,6 +101,17 @@
  
     align-items: center;
     justify-content: flex-end;
+
+    @media (min-width: 1024px){
+
+    
+    
+        margin-bottom: 10px;
+
+    }
+
+
+ 
 
     .hostName {
         display: flex;
@@ -85,4 +135,22 @@
             height: 100%;
         }
     }
+}
+
+
+.descriptionAndEquipment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    @media (min-width: 1024px){
+
+        flex-direction: row;
+        margin: 30px 0;
+        
+
+    }
+
+    
 }

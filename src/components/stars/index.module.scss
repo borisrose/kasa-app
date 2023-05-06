@@ -5,6 +5,11 @@
     align-items: center;
     justify-content: flex-start;
     width: 50%;
+
+    @media (min-width: 1024px){
+
+        justify-content: flex-end;
+    }
     
 }
 

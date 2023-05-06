@@ -34,7 +34,7 @@ const List = ({data, listName}) => {
 
     return(
 
-        <div className={styles.container}>
+        <div className={listName && listName === "Equipement" || listName === "Description"  ? styles.descriptionEquipmentContainer : styles.container}>
 
             <div className={styles.listNameContainer}>
                 <p>{listName}</p>

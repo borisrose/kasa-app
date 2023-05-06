@@ -18,6 +18,13 @@
         box-shadow: 3px 3px 3px rgb(17, 16, 16);
    
     }
+
+    @media (min-width:1047px) {
+        
+        border: solid black 4px;
+        width: 20%;
+        
+    }
   
 
 }

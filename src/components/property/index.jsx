@@ -6,6 +6,7 @@ import Carousel from "../carousel";
 import Tag from "../tags";
 import Stars from "../stars";
 import List from "../list";
+import Footer from "../footer";
 
 
 const Property = () => {
@@ -62,8 +63,10 @@ const Property = () => {
 
     return(
 
+        <>
+               <Banner />
         <div className={styles.container}>
-            <Banner />
+     
 
 
             {data && <Carousel pictures={data.pictures} propriety={{title:data.title}}/>}
@@ -77,13 +80,15 @@ const Property = () => {
 
                     <p>{data.location}</p>
 
+                    <div className={styles.tagsContainer}>
+                        {data.tags && data.tags.map((tag, index) => <Tag key={index} tagName={tag} />)}
+                    </div>
+
                 </div>
 
                 <div className={styles.tagsAndStars}>
 
-                    <div className={styles.tagsContainer}>
-                        {data.tags && data.tags.map((tag, index) => <Tag key={index} tagName={tag} />)}
-                    </div>
+                 
                     <div className={styles.starsContainer}>
                       
                         <Stars starsNumber={data.rating}/>
@@ -100,18 +105,24 @@ const Property = () => {
 
                         </div>
                     </div>
-
-                    <List listName={"Description"} data={data.description}/>
-                    <List listName={"Equipement"} data={data.equipments}/>
+                 
+         
 
                 </div>
 
             </div>}
+            <div className={styles.descriptionAndEquipment}>
+
+                <List listName={"Description"} data={data.description}/>
+                <List listName={"Equipement"} data={data.equipments}/>
+            </div>
 
 
 
 
         </div>
+        <Footer />
+        </>
     )
 
 

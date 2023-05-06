@@ -18,5 +18,22 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media (min-width:1047px) {
+        
+        padding: 30px;
+
+       width: auto;
+       background : #F7F7F7;
+       border-radius: 25px;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin-left: 40px;
+       margin-right: 40px;
+       margin-bottom: 30px;
+       margin-top: 30px;
+       height: auto;
+    }
     
 }

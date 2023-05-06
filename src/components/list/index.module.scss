@@ -3,6 +3,17 @@
   
     width: 100%;
     margin: 10px 0;
+
+  
+
+}
+
+.descriptionEquipmentContainer {
+
+    @media (min-width: 1024px){
+
+        width: 40%;
+    }
 }
 
 .listNameContainer {

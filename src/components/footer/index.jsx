@@ -8,7 +8,9 @@ const Footer = () => {
 
         <div className={styles.container}>
 
-            <img src={logo} alt="logo" />
+            <div className={styles.imgContainer}>
+                <img src={logo} alt="logo" />
+            </div>
             <p>&copy; 2020 Kasa. All rights reserved</p>
         </div>
     )
