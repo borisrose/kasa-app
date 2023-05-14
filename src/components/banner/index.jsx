@@ -9,9 +9,9 @@ const Banner = ({context}) => {
 
     return(
 
-        <header className={context === "about" ? styles.aboutContextContainer : styles.container}>
+        <header className={context === "about" ? styles.aboutContextContainer : context === "propOr404" ? styles.propOr404Container :styles.container}>
 
-            <div className={context=== "about" ? styles.logoAndNavAbout : styles.logoAndNav}>
+            <div className={context=== "about" ? styles.logoAndNavAbout : context === "propOr404" ? styles.propOr404LogoAndNav: styles.logoAndNav}>
 
 
                 <div className={styles.logo}>
@@ -21,7 +21,7 @@ const Banner = ({context}) => {
                 </div>
 
 
-                <nav className={styles.nav}>
+                <nav className={context=== 'propOr404' ? styles.propOr404Nav : styles.nav }>
                     <NavLink 
                     to="/"
                     className={({isActive, isPending}) => isPending ? styles.pending : isActive ? styles.active : ""}
@@ -42,12 +42,16 @@ const Banner = ({context}) => {
 
 
             </div>
-            {context === "about" || !context  ? <div className={!context === "about" || !context ? styles.headerImage : styles.aboutImage }>
+            {context === "about" || !context  ? 
+            
+                <div className={!context === "about" || !context ? styles.headerImage : styles.aboutImage }>
 
                 <img src={context === "about" ? aboutImage : headerImage} alt="" />
                 {!context === "about" || !context && <p> Chez vous, partout et ailleurs </p>}
 
-            </div> : null}
+                </div> 
+
+            : null}
            
 
         </header>

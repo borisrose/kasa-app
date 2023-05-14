@@ -1,36 +1,17 @@
-.container {
-
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-    overflow: hidden;
-
-    align-items: center;
-    justify-content: space-between;
-
-    
-
-    @media (min-width:1047px) {
-        
-      margin: 0 30px;
-    }
-}
-
-
 
 .logo {
 
     display: flex;
-    flex-direction: row;
-  
+    flex-direction: row; 
     width: 40%;
     padding: 0 10px;
     justify-content: space-evenly;
+    
 
     @media (min-width:1047px) {
         
         
-        width: 10%;
+        width: 20%;
         
         
     }
@@ -69,7 +50,7 @@ nav {
         
         display: flex;
         justify-content: space-between;
-        width: 10%;
+        width: 20%;
     }
 
   
@@ -89,22 +70,7 @@ nav {
 }
 
 
-.logoAndNav {
 
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 50%;
-    width: 100%;
-
-    @media (min-width:1047px) {
-        
-       
-        justify-content: space-between;
-        
-    }
-}
 
 .headerImage {
 
@@ -151,7 +117,7 @@ nav {
 
 .aboutImage {
 
-    height: 70%;
+    height: 50%;
     width: 100%;
     position: relative;
     display: flex;
@@ -169,24 +135,101 @@ nav {
     }
 }
 
-.logoAndNavAbout {
+.logoAndNavAbout, .logoAndNav {
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 30%;
+    margin: 30px 0;
+
     width: 100%;
+
+    //border: red 3px solid;
+
+    @media (min-width:1047px) {
+        
+        //border: solid rgb(114, 15, 48) 3px;
+        justify-content: space-between;
+        height: 40%;
+         
+     }
 
 }
 
 
-.aboutContextContainer {
+.aboutContextContainer, .container {
 
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 60vh;
+
     //overflow: hidden;
     justify-content: flex-start;
     align-items: center;
+    @media (min-width:1047px) {
+        
+
+        margin: 0 30px;
+        height: 60vh;
+        
+    }
     
+}
+
+.propOr404Container {
+    display: flex;
+    //border: solid pink 2px;
+    height: 20vh;
+    align-items: center;
+
+    @media (min-width:1047px) {
+        
+        margin: 0 30px;
+        //border: solid orange 3px;
+      }
+
+  
+
+}
+
+.propOr404LogoAndNav {
+
+    display: flex;
+   //border: solid black 2px;
+    height: 100%;
+
+    align-items: center;
+
+    @media (min-width:1047px) {
+        
+     
+        //border: solid royalblue 3px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+}
+
+.propOr404Nav {
+   
+    display: flex;
+    align-items: center;
+
+    
+    height: 100%;
+
+    a {
+    
+        padding: 0;
+        margin: 0;
+    }
+
+
+    @media (min-width:1047px) {
+        
+     
+        //border: solid royalblue 3px;
+        width: 20%;
+        justify-content: space-evenly;
+    }
 }

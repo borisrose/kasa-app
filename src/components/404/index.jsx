@@ -14,7 +14,7 @@ const Error = () => {
 
         <div className={styles.container}>
 
-                <Banner context={"404"} />
+                <Banner context={"propOr404"} />
                 <div className={styles.errorContainer}>
                     <h1>404</h1>
                     <p>Oups! La page que vous demandez n'existe pas.</p>

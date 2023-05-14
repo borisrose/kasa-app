@@ -64,7 +64,7 @@ const Property = () => {
     return(
 
         <>
-               <Banner />
+               <Banner  context={'propOr404'}/>
         <div className={styles.container}>
      
 
@@ -112,9 +112,12 @@ const Property = () => {
 
             </div>}
             <div className={styles.descriptionAndEquipment}>
-
-                <List listName={"Description"} data={data.description}/>
-                <List listName={"Equipement"} data={data.equipments}/>
+                {data &&
+                    <>
+                    <List listName={"Description"} data={data.description}/>
+                    <List listName={"Equipement"} data={data.equipments}/>
+                    </>
+                }   
             </div>
 
 

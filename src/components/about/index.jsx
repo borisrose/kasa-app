@@ -14,10 +14,14 @@ const About = () => {
         <div className={styles.container}>
 
             <Banner context={"about"} />
-            <List listName={"Fiabilité"} data={reliability}/>
-            <List listName={"Respect"} data={respect}/>
-            <List listName={"Service"} data={service} />
-            <List listName={"Sécurité"} data={security} />
+            <div className={styles.listGroupContainer}>
+                <List listName={"Fiabilité"} data={reliability}/>
+                <List listName={"Respect"} data={respect}/>
+                <List listName={"Service"} data={service} />
+                <List listName={"Sécurité"} data={security} />
+                
+            </div>
+        
         </div>
     )
 }

@@ -2,13 +2,17 @@
 
   
     width: 100%;
-    margin: 10px 0;
+    margin: 20px 0;
+  
 
   
 
 }
 
 .descriptionEquipmentContainer {
+
+
+    margin: 20px 0;
 
     @media (min-width: 1024px){
 
@@ -20,11 +24,11 @@
 
     background-color:#FF6060;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 0 30px;
 
 }
 
