@@ -23,6 +23,8 @@ const Card = ({data}) => {
 
         <div className={styles.container}>
 
+            
+            <img src={data.pictures[0]} />
             <div className={styles.cardInnerContainer} onClick={(e) => handleCardClick(e, data)}>
 
                 <p> {data.title} </p>

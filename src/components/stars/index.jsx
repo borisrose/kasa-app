@@ -32,7 +32,7 @@ const Stars = ({starsNumber}) => {
 
         let silverCounter = 0
 
-        while(silverCounter < (6 - redStarsNumber)){
+        while(silverCounter < (5 - redStarsNumber)){
 
             sArray.push("silver")
             silverCounter += 1;
